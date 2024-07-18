@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Inventory Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>MORINGA GOODLIFE HOSPITAL</h1>
+    <h2>Inventory Management System</h2>
+    <nav>
+      <ul>
+        <li><a href="#add-item">Add Item</a></li>
+        <li><a href="#inventory">Inventory</a></li>
+        <li><a href="#stock-tracker">Stock Tracker</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="add-item">
+      <h2>Add New Item</h2>
+      <form id="add-item-form">
+        <input type="text" id="item-name" placeholder="Item Name" required>
+        <input type="number" id="item-quantity" placeholder="Quantity" required>
+        <select id="item-category" required>
+          <option value="" disabled selected>Select Category</option>
+        </select>
+        <button type="submit">Add Item</button>
+      </form>
+    </section>
+
+    <section id="inventory">
+      <h2>Current Inventory</h2>
+      <input type="text" id="search-input" placeholder="Search by Item Name">
+      <div id="inventory-container" class="inventory-list">
+      </div>
+    </section>
+
+    <section id="stock-tracker">
+      <h2>Stock Tracker</h2>
+      <table id="stock-tracker-table">
+        <thead>
+          <tr>
+            <th>Date & Time</th>
+            <th>Action</th>
+            <th>Item</th>
+            <th>Initial Stock</th>
+            <th>Change</th>
+            <th>Final Stock</th>
+          </tr>
+        </thead>
+        <tbody id="stock-tracker-body">
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

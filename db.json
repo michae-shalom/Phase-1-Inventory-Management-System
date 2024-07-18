@@ -1,0 +1,13 @@
+{
+  "inventory": [
+    {
+      "id": "7c9a",
+      "name": "Gloves",
+      "quantity": 55,
+      "category": "safety-equipment"
+    }
+  ],
+  "stockTracker": [
+    
+  ]
+}
